@@ -92,7 +92,7 @@ function disableCards() {
 
   resetBoard();
   pairs++;
-  if(pairs===1){
+  if(pairs===8){
     let win=document.getElementById('welcome-screen');
     
     score.innerHTML='wel done';
