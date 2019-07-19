@@ -39,120 +39,120 @@
     </header>
     
 
-      <div >
+      <div class="memory-game">
 
-          -<div > 
+          -<div id="welcome-screen" class="welcome-screen "> 
               
-              <h2 >total time</h2>
-              <section>
+              <h2 class="t-time">total time</h2>
+              <section class="score-panel">
                   <div>
-                      <h2 >well done, you got x stars</h2>
+                      <h2 id='score'>well done, you got x stars</h2>
                       
                     </div>
-                    <h2 > click to Reset the game</h2>
-                <ul >
+                    <h2 onclick="resetGame()"> click to Reset the game</h2>
+                <ul class="stars">
                     <li>
-                        <i ></i>
+                        <i class="fa fa-star gold-star star1"></i>
                     </li>
                     <li>
-                        <i ></i>
+                        <i class="fa fa-star gold-star star2"></i>
                     </li>
                     <li>
-                        <i ></i>
+                        <i class="fa fa-star gold-star star3"></i>
                     </li>
                 </ul>
               </section>
           </div>
 
-          <section >
-              <span >Time: <span >0</span>
-              <span >00</span></span>
-              <ul >
+          <section class="score-panel">
+              <span class="timer">Time: <span id="minutes" class="show-minutes">0</span>
+              <span id="seconds" class="show-seconds">00</span></span>
+              <ul class="stars">
                   <li>
-                      <i ></i>
+                      <i class="fa fa-star gold-star star1"></i>
                   </li>
                   <li>
-                      <i ></i>
+                      <i class="fa fa-star gold-star star2"></i>
                   </li>
                   <li>
-                      <i ></i>
+                      <i class="fa fa-star gold-star star3"></i>
                   </li>
               </ul>
-              <span >0</span> Moves
-              <div >
-                  <i ></i> Reset game
+              <span id="moves">0</span> Moves
+              <div class="restart" onclick="resetGame()">
+                  <i class="fas fa-redo-alt"></i> Reset game
               </div>
           </section>
-        <div >
-          <img  src="img/f1.svg" alt="bird1" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card"  data-img="bird1">
+          <img class="front-face" src="img/f1.svg" alt="bird1" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f1.svg" alt="bird1" />
-          <img  src="img/back.svg" alt="compass" />
-        </div>
-    
-        <div class="memory-card" >
-          <img  src="img/f2.svg" alt="cherry" />
-          <img  src="img/back.svg" alt="compass" />
-        </div>
-        <div class="memory-card" >
-          <img  src="img/f2.svg" alt="cherry" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="bird1">
+          <img class="front-face" src="img/f1.svg" alt="bird1" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
     
-        <div class="memory-card"  >
-          <img  src="img/f3.svg" alt="ship" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="cherry">
+          <img class="front-face" src="img/f2.svg" alt="cherry" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f3.svg" alt="ship" />
-          <img  src="img/back.svg" alt="compass" />
-        </div>
-    
-        <div class="memory-card"  >
-          <img  src="img/f4.svg" alt="sun" />
-          <img  src="img/back.svg" alt="compass" />
-        </div>
-        <div class="memory-card" >
-          <img  src="img/f4.svg" alt="sun" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="cherry">
+          <img class="front-face" src="img/f2.svg" alt="cherry" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
     
-        <div class="memory-card" >
-          <img  src="img/f5.svg" alt="annanas" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="ship" >
+          <img class="front-face" src="img/f3.svg" alt="ship" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f5.svg" alt="annanas" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="ship">
+          <img class="front-face" src="img/f3.svg" alt="ship" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
     
-        <div class="memory-card" >
-          <img  src="img/f6.svg" alt="pufin" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="sun" >
+          <img class="front-face" src="img/f4.svg" alt="sun" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f6.svg" alt="pufin" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="sun">
+          <img class="front-face" src="img/f4.svg" alt="sun" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
+        </div>
+    
+        <div class="memory-card" data-img="annanas">
+          <img class="front-face" src="img/f5.svg" alt="annanas" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
+        </div>
+        <div class="memory-card" data-img="annanas">
+          <img class="front-face" src="img/f5.svg" alt="annanas" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
+        </div>
+    
+        <div class="memory-card" data-img="pufin">
+          <img class="front-face" src="img/f6.svg" alt="pufin" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
+        </div>
+        <div class="memory-card" data-img="pufin">
+          <img class="front-face" src="img/f6.svg" alt="pufin" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
 
-        <div class="memory-card" >
-          <img  src="img/f7.svg" alt="drink" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="drink">
+          <img class="front-face" src="img/f7.svg" alt="drink" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f7.svg" alt="drink" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="drink">
+          <img class="front-face" src="img/f7.svg" alt="drink" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
 
-        <div class="memory-card" >
-          <img  src="img/f8.svg" alt="crabs" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="crabs">
+          <img class="front-face" src="img/f8.svg" alt="crabs" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
-        <div class="memory-card" >
-          <img  src="img/f8.svg" alt="crabs" />
-          <img  src="img/back.svg" alt="compass" />
+        <div class="memory-card" data-img="crabs">
+          <img class="front-face" src="img/f8.svg" alt="crabs" />
+          <img class="back-face" src="img/back.svg" alt="compass" />
         </div>
       </div>
 
@@ -162,7 +162,11 @@
       </footer>
     
   
-  
+   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" 
+   integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+      crossorigin="anonymous"></script>
+    
+    <script src="js/test2.js"></script>
 
 </body>
 
