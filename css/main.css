@@ -78,8 +78,13 @@
   padding: 2em;
   background:red;
   display: none;
-  flex-direction: row;  
-  justify-content: space-around;
+  flex-direction:row;  
+  justify-content: space-between;
+}
+.time-container{
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
 }
 .t-time{
   display: flex;

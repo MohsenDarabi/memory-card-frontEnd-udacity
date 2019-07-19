@@ -42,13 +42,18 @@
       <div class="memory-game">
 
           -<div id="welcome-screen" class="welcome-screen "> 
-              
-              <h2 class="t-time">total time</h2>
-              <section class="score-panel">
+            <div class="time-container">
+                    <span class="timer">Time</span>: <span id="minutes1" class="show-minutes">0</span><span id="seconds1" class="show-seconds">00</span></span>
+                    
+            </div>
+ 
+              <div class="score-panel">
+                    
                   <div>
                       <h2 id='score'>well done, you got x stars</h2>
                       
                     </div>
+                    <div></div>
                     <h2 onclick="resetGame()"> click to Reset the game</h2>
                 <ul class="stars">
                     <li>
@@ -61,7 +66,7 @@
                         <i class="fa fa-star gold-star star3"></i>
                     </li>
                 </ul>
-              </section>
+            </div>
           </div>
 
           <section class="score-panel">
@@ -69,13 +74,13 @@
               <span id="seconds" class="show-seconds">00</span></span>
               <ul class="stars">
                   <li>
-                      <i class="fa fa-star gold-star star1"></i>
+                      <i class="fa fa-star gold-star "></i>
                   </li>
                   <li>
-                      <i class="fa fa-star gold-star star2"></i>
+                      <i class="fa fa-star gold-star "></i>
                   </li>
                   <li>
-                      <i class="fa fa-star gold-star star3"></i>
+                      <i class="fa fa-star gold-star "></i>
                   </li>
               </ul>
               <span id="moves">0</span> Moves

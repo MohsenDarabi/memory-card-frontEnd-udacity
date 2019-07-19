@@ -14,8 +14,11 @@ let isTimeStarted = false;
 function select(element) {
   return document.querySelector(element);
 }
+
 const minutes = select('#minutes');
+const minutes1 = select('#minutes1');
 const seconds = select('#seconds');
+const seconds1 = select('#seconds1');
 
 
 function movement(){
@@ -41,10 +44,13 @@ function timer() {
   }
   if (secondsCount < 10) {
     seconds.innerHTML = `0${secondsCount}`;
+    seconds1.innerHTML = `0${secondsCount}`;
+    
   } else {
     seconds.innerHTML = secondsCount;
   }
   minutes.innerHTML = minuteCount;
+  minutes1.innerHTML = minuteCount;
 }
 
 
@@ -86,18 +92,22 @@ function disableCards() {
 
   resetBoard();
   pairs++;
-  if(pairs===8){
+  if(pairs===1){
     let win=document.getElementById('welcome-screen');
     
     score.innerHTML='wel done';
     win.classList.add('visible');
     // innerHTML = ` ${minuteCount} min(s) ${secondsCount} secs`;
     if(move<22){
-      score.innerHTML=`well done with ${move} moves, you got 3 stars`;
+      score.innerHTML=`well done with ${move} moves`;
     }else if(move<30){
-      score.innerHTML=`well done,with ${move} moves you got 2 stars`;
+      score.innerHTML=`well done,with ${move} moves `;
+      document.querySelector('.star3').classList.remove('gold-star');
+
     } else{
-      score.innerHTML=`well done,with ${move} moves you got 1 star`;
+      score.innerHTML=`well done,with ${move} moves `;
+      document.querySelector('.star3').classList.remove('gold-star');
+      document.querySelector('.star2').classList.remove('gold-star');
     }
     
   }
