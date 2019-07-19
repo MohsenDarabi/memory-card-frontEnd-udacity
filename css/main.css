@@ -2,45 +2,44 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   @import "__spacing.css"; /* Using Tachyons spacing */
+@import "__spacing.css"; /* Using Tachyons spacing */
 
-   html,
-   body {
-     color: #222;
-     font-size: 1em;
-     font-family: "Roboto", sans-serif;
-     line-height: 1.4;
-     margin: 0 auto;
-     height: 100%;
-     width: 100%;
-     display: flex;
-     background: #060AB2;
-     
-      }
-      body {
-        position: relative;
-        display: flex;
-        width: 90%;
-        height: 90%;
-      }
+html,
+body {
+  color: #222;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: #060ab2;
+}
+body {
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 90%;
+}
 
-   * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-   ::-moz-selection {
-     background: #b3d4fc;
-     text-shadow: none;
-   }
-   
-   ::selection {
-     background: #b3d4fc;
-     text-shadow: none;
-   }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-   /*
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
  * Styles for the Score Panel
  */
 
@@ -61,55 +60,52 @@
 
 .score-panel .stars li {
   list-style: none;
- 
 }
 
-.gold-star{color: gold}
-
-
+.gold-star {
+  color: gold;
+}
 
 /* welcome screen style */
-.welcome-screen{
+.welcome-screen {
   z-index: 2;
   position: absolute;
   margin: auto;
   width: 100%;
-  height:120%;
+  height: 120%;
   padding: 2em;
-  background:red;
+  background: red;
   display: none;
-  flex-direction:row;  
+  flex-direction: row;
   justify-content: space-between;
 }
-.time-container{
+.time-container {
   padding: 2em;
   display: flex;
   flex-direction: row;
 }
-.t-time{
+.t-time {
   display: flex;
-  flex-basis:100%;
-
+  flex-basis: 100%;
 }
 h1,
-h2{
+h2 {
   margin: auto;
   padding: 0;
   display: flex;
   flex-direction: row;
 }
-.visible{
-  display:flex;
+.visible {
+  display: flex;
 }
-   .memory-game {
+.memory-game {
   position: relative;
   width: 80%;
   height: 80%;
   padding: 0;
-  margin:auto ;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .memory-card {
@@ -119,13 +115,13 @@ h2{
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
-  transition: transform .6s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transition: transform 0.6s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .memory-card:active {
   transform: scale(0.97);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .memory-card.turn {
@@ -139,35 +135,32 @@ h2{
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: #1c7ccc;
   backface-visibility: hidden;
 }
 
 .front-face {
   transform: rotateY(180deg);
 }
- 
-   /*
+
+/*
     * Remove the gap between audio, canvas, iframes,
     * images, videos and the bottom of their containers:
     * 
     */
-   
-   audio,
-   canvas,
-   iframe,
-   img,
-   svg,
-   video {
-     vertical-align: middle;
-   }
 
-   
-   /* ========================================================================== ========================================================================== */
-   
-   
-   
-      /*
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* ========================================================================== ========================================================================== */
+
+/*
     * Clearfix: contain floats
     *
     * For modern browsers
@@ -178,14 +171,13 @@ h2{
     * 2. The use of `table` rather than `block` is only necessary if using
     *    `:before` to contain the top-margins of child elements.
     */
-   
-   .clearfix:before,
-   .clearfix:after {
-     content: " "; /* 1 */
-     display: table; /* 2 */
-   }
-   
-   .clearfix:after {
-     clear: both;
-   }
-   
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
